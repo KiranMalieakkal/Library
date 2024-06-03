@@ -1,0 +1,49 @@
+@keyframes slidein {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.news__article {
+  animation: slidein 5s linear 0s 1;
+}
+
+@keyframes glow {
+  0% {
+    color: red;
+  }
+  50% {
+    color: green;
+  }
+  100% {
+    color: blue;
+  }
+}
+
+.header__title,
+.news__article-title {
+  animation-name: glow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes glow2 {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: black;
+  }
+}
+
+.news__article-btn--read {
+  animation-name: glow2;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
